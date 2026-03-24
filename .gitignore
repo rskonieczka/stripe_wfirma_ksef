@@ -5,3 +5,11 @@ __pycache__
 *.pyd
 
 .env
+.env.local
+.env.*
+
+/vendor/
+/storage/logs/*.log
+/storage/idempotency/*.json
+!/storage/logs/.gitkeep
+!/storage/idempotency/.gitkeep

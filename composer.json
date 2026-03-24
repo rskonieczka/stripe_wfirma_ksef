@@ -1,0 +1,22 @@
+{
+  "name": "evillage/wfirma-ksef",
+  "description": "Integrator webhook Stripe do wFirma w PHP",
+  "type": "project",
+  "license": "proprietary",
+  "require": {
+    "php": "^8.2",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-libxml": "*",
+    "stripe/stripe-php": "^16.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "scripts": {
+    "serve": "php -S 127.0.0.1:8080 -t public",
+    "lint": "find public src -name '*.php' -print0 | xargs -0 -n1 php -l"
+  }
+}
